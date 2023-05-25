@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilos generales */
+
+body{
+    background-color: pink
+}
+ /*estilos para pantallas de celulares */
+header{
+    text-align: center;
+    background-size: cover;
+   }
+
+p{
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.contenedor{
+
+    background-image: url(../img/banner2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    
+}
+
+
+header nav ul li{
+    list-style: none;
+    display: inline-table;
+    text-decoration: none;
+    margin-left:30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(243, 162, 219);
+    border-radius: 300px;
+    box-shadow: 05px 10px 15px black;
+}
+
+main{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+footer h3{
+text-align: center;
+padding-top: 200px;
+
+}
+
+
+footer div ul{
+   height: 80px;
+   margin: 100;
+   display: flex;
+   flex-flow: row wrap ;
+   justify-content: center;
+   align-items: baseline;
+   gap: 10%;
+
+    
+
+}
+
+/* estlos de main */
+
+.contenedor-dos .img-cinco{
+    display: none;
+}
+
+.contenedor-dos div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor-dos{
+    padding: 2rem;
+    height: 70vh;
+    margin: 1rem 3rem 5rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 33%);
+    row-gap: 1rem;
+}
+
+/* estilos de footer  */
+
+footer{
+    margin-top: 1rem;
+    text-align: center;
+    color: rgb(2, 2, 2);
+}
+
+
+/* estilos para tablet  */
+
+
+@media screen and (min-width:600px){
+    .contenedor-dos{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        column-gap: 1rem;
+    }
+
+    .contenedor-dos .img-cuatro{
+        grid-column: span 3;
+    }
+}
+
+/* estilos para desktop */
+
+@media screen and (min-width:1024px){
+    .contenedor-dos .img-dos, .img-cinco{
+        display: block;
+    }
+
+    .contenedor-dos{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30% 90% 20%;
+    }
+
+    .contenedor-dos .img-uno, .img-tres{
+        grid-row: span 2;
+    }
+
+    .contenedor-dos .img-cuatro{
+        grid-column: span 1;
+    }
+
+    .contenedor-dos .img-cinco{
+        grid-column: span 3;
+    }
+}
