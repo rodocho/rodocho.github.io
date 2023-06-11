@@ -1,151 +1,96 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* estilos generales */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-    background-color: pink
-}
+  background-color: #f0b8c2;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
-/*estilos para pantallas de celulares */
 header {
-    text-align: center;
-    background-size: cover;
-}
-
-p {
-
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-
-.contenedor {
-
-    background-image: url(../img/banner2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-
-}
-
-
-header nav ul li {
+  text-align: cemter;
+  background-size: cover; }
+  header nav ul li {
     list-style: none;
     display: inline-table;
     text-decoration: none;
     margin-left: 30px;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: rgb(243, 162, 219);
+    background-color: #f3a2db;
     border-radius: 300px;
-    box-shadow: 05px 10px 15px black;
-}
+    box-shadow: 05px 10px 15px black; }
+
+.contenedor {
+  background-image: url(../img/banner2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px; }
 
 main {
-    text-align: center;
-    font-size: 30px;
-}
-
-
-footer h3 {
-    text-align: center;
-    padding-top: 200px;
-
-}
-
-
-footer div ul {
-    height: 80px;
-    margin: 100;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: baseline;
-    gap: 10%;
-
-
-
-}
-
-/* estlos de main */
-
-.contenedor-dos .img-cinco {
-    display: none;
-}
-
-.contenedor-dos div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+  text-align: center;
+  font-size: 30px; }
 
 .contenedor-dos {
-    padding: 2rem;
-    height: 70vh;
-    margin: 1rem 3rem 5rem 3rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 33%);
-    row-gap: 1rem;
-}
+  padding: 2rem;
+  height: 70vh;
+  margin: 1rem 3rem 5rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 33%);
+  row-gap: 1rem; }
 
-/* estilos de footer  */
+.contenedor-dos div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.contenedor-dos .img-cinco {
+  display: none; }
+
+@media screen and (min-width: 600px) {
+  .contenedor-dos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    column-gap: 1rem; }
+  .img-cuatro {
+    display: flex; }
+  .img-cinco {
+    grid-column: span 4; } }
+
+@media screen and (min-width: 1024px) {
+  .contenedor-dos .img-dos, .contenedor-dos .img-cinco {
+    display: flex; }
+  .contenedor-dos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 90% 20%; }
+  .contenedor-dos .img-uno, .contenedor-dos .img-tres {
+    grid-row: span 2; }
+  .contenedor-dos .img-cuatro {
+    grid-column: span 1; }
+  .contenedor-dos .img-cinco {
+    grid-column: span 3; } }
+
+p {
+  font-size: 30px;
+  color: #1b1b1b;
+  text-shadow: 4px 7px 7px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Georgia, 'Times New Roman', Times, serif; }
 
 footer {
-    margin-top: 1rem;
-    text-align: center;
-    color: rgb(2, 2, 2);
-}
+  margin-top: 1rem;
+  text-align: center;
+  color: #020202; }
 
+footer h3 {
+  text-align: center;
+  padding-top: 200px; }
 
-/* estilos para tablet  */
-
-
-@media screen and (min-width:600px) {
-    .contenedor-dos {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 50%);
-        column-gap: 1rem;
-    }
-
-    .contenedor-dos .img-cuatro {
-        grid-column: span 3;
-    }
-}
-
-/* estilos para desktop */
-
-@media screen and (min-width:1024px) {
-
-    .contenedor-dos .img-dos,
-    .img-cinco {
-        display: block;
-    }
-
-    .contenedor-dos {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 30% 90% 20%;
-    }
-
-    .contenedor-dos .img-uno,
-    .img-tres {
-        grid-row: span 2;
-    }
-
-    .contenedor-dos .img-cuatro {
-        grid-column: span 1;
-    }
-
-    .contenedor-dos .img-cinco {
-        grid-column: span 3;
-    }
-}
+footer div ul {
+  height: 80px;
+  margin: 100;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10%; }
