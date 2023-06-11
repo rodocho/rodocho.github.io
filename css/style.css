@@ -60,12 +60,14 @@ main {
     grid-column: span 4; } }
 
 @media screen and (min-width: 1024px) {
-  .contenedor-dos .img-dos, .contenedor-dos .img-cinco {
+  .contenedor-dos .img-dos,
+  .contenedor-dos .img-cinco {
     display: flex; }
   .contenedor-dos {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 30% 90% 20%; }
-  .contenedor-dos .img-uno, .contenedor-dos .img-tres {
+  .contenedor-dos .img-uno,
+  .contenedor-dos .img-tres {
     grid-row: span 2; }
   .contenedor-dos .img-cuatro {
     grid-column: span 1; }
