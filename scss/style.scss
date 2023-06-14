@@ -1,5 +1,6 @@
 @import "extra/vars";
 @import "extra/mixin";
+@import "extra/extend";
 
 * {
     margin: 0;
@@ -39,7 +40,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
-
+@extend %border;
 }
 
 main {
