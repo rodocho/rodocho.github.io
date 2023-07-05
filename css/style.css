@@ -79,9 +79,10 @@ main {
 
 p {
   font-size: 20px;
-  color: #302b2b;
+  color: #292424;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Georgia, 'Times New Roman', Times, serif;
-  text-align: justify; }
+  text-align: justify;
+  text-shadow: none; }
 
 footer {
   margin-top: 1rem;
