@@ -45,14 +45,12 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 33%);
   row-gap: 1rem; }
-
-.contenedor-dos div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.contenedor-dos .img-cinco {
-  display: none; }
+  .contenedor-dos .img-cinco {
+    display: none; }
+  .contenedor-dos div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 @media screen and (min-width: 600px) {
   .contenedor-dos {
@@ -81,8 +79,7 @@ main {
 
 p {
   font-size: 30px;
-  color: #1b1b1b;
-  text-shadow: 4px 7px 7px;
+  color: #181717;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Georgia, 'Times New Roman', Times, serif; }
 
 footer {
