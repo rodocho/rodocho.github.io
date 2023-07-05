@@ -78,9 +78,10 @@ main {
     grid-column: span 3; } }
 
 p {
-  font-size: 30px;
-  color: #181717;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Georgia, 'Times New Roman', Times, serif; }
+  font-size: 20px;
+  color: #302b2b;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Georgia, 'Times New Roman', Times, serif;
+  text-align: justify; }
 
 footer {
   margin-top: 1rem;
